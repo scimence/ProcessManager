@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="50dip"
+            android:layout_height="50dip" >
+        </ImageView>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:checked="true"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip" >
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应  用:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/tvLabel"
+            android:text="Label" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabel"
+            android:text="包  名:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textPackageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textAppName"
+            android:layout_below="@id/textAppName"
+            android:text="Label" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:text="进程ID:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textProcessId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPackageName"
+            android:layout_toRightOf="@id/tvPId"
+            android:text="Label" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPId"
+            android:text="进程名:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textProcessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProcessId"
+            android:layout_toRightOf="@id/tvPName"
+            android:text="Label" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvMemmory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPName"
+            android:text="内  存:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textMemorySize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPName"
+            android:layout_toRightOf="@id/tvMemmory"
+            android:text="Label" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>
